@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Guessing_Game{
+static Scanner sc=new Scanner(System.in);
+public static void main() throws Exception
+         {
+            int sys=(int)(Math.random()*5);
+            System.out.print("Enter the guess number:");
+            Thread.sleep(1000);
+            int user=sc.nextInt();
+            if (sys==user) {
+                System.out.println("You are Right :)");
+            }
+            else{
+                System.out.println("You are wrong :(");
+            }
+            System.out.println("The correct number is :"+sys);
+        }
+}
