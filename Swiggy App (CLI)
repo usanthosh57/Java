@@ -1,0 +1,1365 @@
+import java.util.*;
+public class Swiggy {
+    static Scanner sc=new Scanner(System.in);
+    public static void main(String[]args)throws Exception
+    {
+        System.out.println("\t\t\t\tWelcome to Swiggy Application");
+        Thread.sleep(500);
+        System.out.println("Select the Hotel");
+        System.out.println("------------------");
+        System.out.println("1.Buhari \n2.Bilal \n3.Amma Canteen \n4.A2B");
+        int hotel_selection =sc.nextInt();
+        System.out.println("\t\t\t\tProcessing...");
+        Thread.sleep(2000);
+        switch(hotel_selection)
+        {
+            case 1:    //Hotel Buhari
+            {
+                System.out.println("\t\t\tGreetings from Buhari Hotel");
+                System.out.println("Select Your Favorite Food");
+                System.out.println("1.Chicken-65 \n2.Mutton Biriyani \n3.Chicken Biriyani \n4.Prawn Biriyani");
+                int Buhari_food =sc.nextInt();
+                switch(Buhari_food)
+                {
+                    case 1: //Chicken-65(Buhari)
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*70;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken 65
+                    case 2: //Mutton Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*200;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Mutton biriyani
+                    case 3:  //Chicken biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*180;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken biriyani
+                    case 4:  //Prawn Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*210;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                           
+                        }break;
+                    }//End of Prawn biriyani
+                    
+                    
+                }  //End food items of Buhari
+                
+                break;    
+            }//end case of hotel Buhari
+/////////////////////////////////////////////////////////////
+            case 2: // Hotel Bilal
+            {   
+                System.out.println("\t\t\tGreetings from Bilal Hotel");
+                System.out.println("Select Your Favorite Food");
+                System.out.println("1.Chicken-65 \n2.Mutton Biriyani \n3.Chicken Biriyani \n4.Prawn Biriyani");
+                int Bilal_food =sc.nextInt();
+                switch(Bilal_food)
+                {
+                    case 1: //Chicken-65(Bilal)
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*70;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                           
+                        }break;
+                    }//End of chicken 65
+                    case 2: //Mutton Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*200;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Mutton biriyani
+                    case 3:  //Chicken biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*180;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken biriyani
+                    case 4:  //Prawn Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*210;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Prawn biriyani
+                    
+                    
+                }  //End food items of Bilal
+                
+                break;    
+            }//end case of hotel Bilal
+//////////////////////////////////////////////////////
+            case 3:    //Hotel Amma Canteen
+            {
+                System.out.println("\t\t\tGreetings from Amma Canteen Hotel");
+                System.out.println("Select Your Favorite Food");
+                System.out.println("1.Chicken-65 \n2.Mutton Biriyani \n3.Chicken Biriyani \n4.Prawn Biriyani");
+                int Amma_Canteen_food =sc.nextInt();
+                switch(Amma_Canteen_food)
+                {
+                    case 1: //Chicken-65(Amma Canteen)
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*70;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken 65
+                    case 2: //Mutton Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*200;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Mutton biriyani
+                    case 3:  //Chicken biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*180;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken biriyani
+                    case 4:  //Prawn Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*210;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Prawn biriyani
+                    
+                    
+                }  //End food items of Amma Canteen
+                
+                break;    
+            }//end case of hotel Amma Canteen
+///////////////////////////////////////////////////////
+            case 4: // Hotel A2B
+            {   
+                System.out.println("\t\t\tGreetings from A2B Hotel");
+                System.out.println("Select Your Favorite Food");
+                System.out.println("1.Chicken-65 \n2.Mutton Biriyani \n3.Chicken Biriyani \n4.Prawn Biriyani");
+                int A2B_food =sc.nextInt();
+                switch(A2B_food)
+                {
+                    case 1: //Chicken-65(A2B)
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*70;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken 65
+                    case 2: //Mutton Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*200;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Mutton biriyani
+                    case 3:  //Chicken biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*180;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of chicken biriyani
+                    case 4:  //Prawn Biriyani
+                    {
+                        System.out.print("\t\t\t\tEnter the Quantity:");
+                        double qty=sc.nextInt();
+                        double bill=qty*210;
+                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                        System.out.println("Select the Input");
+                        System.out.println("1.Confirm\n2.Cancel");
+                        int input=sc.nextInt();
+                        switch(input)
+                        {
+                            case 1:{ //Payment gateway
+                                System.out.println("\t\t\t\tRedirecting to Payment Mode....");
+                                Thread.sleep(2000);
+                                System.out.println("Select the Payment Method");
+                                System.out.println("1.G-Pay\n2.Phone-Pay");
+                                int pay=sc.nextInt();
+                                switch(pay)
+                                {
+                                    case 1:  //g-pay
+                                    { //Security Pin
+                                        System.out.print("\t\t\t\tEnter Security Pin:");
+                                        int pin=sc.nextInt();
+                                        if(pin==1234){
+                                        System.out.println("\t\t\t\tProcessing...");
+                                        Thread.sleep(1000);
+                                        System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                        System.out.print("\t\t\t\tEnter the amount:");
+                                        double amt=sc.nextInt();
+                                        if(amt==bill)
+                                        {
+                                            Thread.sleep(500);
+                                            int sys_otp = (int)(Math.random()*9999+9999);
+                                            System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                            int otp=sc.nextInt();
+                                            if(sys_otp==otp){
+                                                Thread.sleep(2000);
+                                                System.out.println("\t\t\t\tProcessing...");
+                                                System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                            }else{
+                                                System.out.println("Invalid OTP :(");
+                                            }
+                                        }break;
+                                    }
+                                  }
+                                  case 2:  //phone-pay
+                                  { //Security Pin
+                                    System.out.print("\t\t\t\tEnter Security Pin:");
+                                    int pin=sc.nextInt();
+                                    if(pin==1234){
+                                    System.out.println("\t\t\t\tProcessing...");
+                                    Thread.sleep(1000);
+                                    System.out.println("\t\t\t\tTotal Bill:"+bill);
+                                    System.out.print("\t\t\t\tEnter the amount:");
+                                    double amt=sc.nextInt();
+                                    if(amt==bill)
+                                    {
+                                        Thread.sleep(500);
+                                        int sys_otp = (int)(Math.random()*9999+9999);
+                                        System.out.print("\t\t\t\tEnter the OTP:"+sys_otp+" ");
+                                        int otp=sc.nextInt();
+                                        if(sys_otp==otp){
+                                            Thread.sleep(2000);
+                                            System.out.println("\t\t\t\tProcessing...");
+                                            System.out.println("\t\t\t\tOrder will be delivered soon :)");
+                                        }else{
+                                            System.out.println("Invalid OTP :(");
+                                        }
+                                    }break;
+                                }
+                              }
+                                  default:{
+                                    System.out.println("\t\t\t\tPayment Failed :(");
+                                    break;
+                                }
+                                } 
+                            }
+                            
+                        }break;
+                    }//End of Prawn biriyani
+                    
+                    
+                }  //End food items of A2B
+                
+                break;    
+            }//end case of hotel A2B
+            
+            default :{ //hotel_selection
+                System.out.println("\t\t\t\tSelect Hotels in the list given");
+                break;
+            }
+         
+        }
+
+    }
+
+}
